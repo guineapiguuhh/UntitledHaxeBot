@@ -11,11 +11,11 @@ class Version implements Command {
     public function run(m: Message, args: Args): Void {
         var git_hash: String = new Process("git", ["rev-parse", "HEAD"])
             .stdout
-            .readString(0);
+            .readLine();
 
         var haxe: String = new Process("haxe", ["--version"])
             .stdout
-            .readString(0);
+            .readLine();
 
         m.reply({
             content: 'Git Hash: ${git_hash}\nHaxe: ${haxe}'
