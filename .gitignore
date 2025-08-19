@@ -1,0 +1,5 @@
+bin/
+.env
+bank.xml
+.vscode/*
+.haxelib/

@@ -1,0 +1,5 @@
+--library hxdiscord
+--library hxdotenv
+--hl bin/main.hl
+--class-path source
+--main Main
